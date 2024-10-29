@@ -1,0 +1,70 @@
+/* AttendanceSummary.css */
+.attendance-summary-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .attendance-summary-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .attendance-table th, .attendance-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .attendance-table th {
+    background-color: #f2f2f2;
+  }
+.summary-close {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  align-self: center; /* Center the button */
+  border-radius: 5px;
+  width: 100px;
+}
+
+.summary-close:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.attendance-summary-container h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4caf50; /* Optional: Green color for the "Present Now 🙋" heading */
+  }

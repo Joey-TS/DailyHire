@@ -1,0 +1,87 @@
+/* ActionSelect.css */
+
+/* Ensure the body and html elements take up the full height */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Centering the action-select-container on the screen */
+  .action-select-container {
+    margin-top: 20px;
+    position: fixed; /* Fixes the element relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center offset by 50% of its own width/height */
+    width: 95vw; /* Make the width 95% of the viewport width */
+    height: 70vh; /* Set the height to 70% of the viewport height */
+    max-width: 100%; /* Ensure it does not exceed 100% of viewport width */
+    padding: 20px; /* Padding for internal spacing */
+    background: #4d4c4c; /* Background color */
+    border: 1px solid #777676; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    z-index: 1000; /* Ensures it stays on top of other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for visual depth */
+    box-sizing: border-box; /* Include padding in the element’s width/height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center content vertically */
+    animation: fadeIn 0.2s ease forwards; /* Fade-in animation */
+  opacity: 0; /* Start with opacity 0 */
+  }
+  
+  /* Styling for the buttons inside the container */
+  .action-button {
+    width: 100%; /* Full width of the container */
+    padding: 15px 0; /* Top and bottom padding */
+    margin: 10px 0; /* Vertical margin between buttons */
+    background-color: #222323; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding and border in the element’s width/height */
+    animation: fadeIn 0.2s ease forwards; /* Fade-in animation */
+    opacity: 0; /* Start with opacity 0 */
+  }
+
+  .action-button {
+    width: 100%; /* Full width of the container */
+    padding: 15px 0; /* Top and bottom padding */
+    margin: 10px 0; /* Vertical margin between buttons */
+    background-color: #222323; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding and border in the element’s width/height */
+    animation: fadeIn 0.2s ease forwards; /* Fade-in animation */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .close-button {
+    position: absolute; /* Position relative to the parent */
+    top: 10px; /* 10px from the top */
+    left: 10px; /* 10px from the left */
+    background: none; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  .close-button img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+  }
+  .action-button:hover {
+    background-color: #3d3d3e; /* Darker shade of blue on hover */
+  }

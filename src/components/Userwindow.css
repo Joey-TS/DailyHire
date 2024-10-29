@@ -1,0 +1,110 @@
+
+body {
+  -webkit-touch-callout: none; /* Disable callout, like search options on iOS */
+  -webkit-user-select: none;   /* Disable text selection on iOS */
+  -moz-user-select: none;      /* Disable text selection on Firefox */
+  -ms-user-select: none;       /* Disable text selection on IE/Edge */
+  -webkit-tap-highlight-color: transparent; 
+  user-select: none;           /* Disable text selection on modern browsers */
+  margin: 0;                   /* Remove default margin */
+  padding: 0;                  /* Remove default padding */
+}
+
+
+.header {
+  text-align: center;
+  position: relative; 
+}
+
+.header h1 {
+  cursor: text !important;
+  text-decoration: none !important;
+  animation: zoomInOut 2s forwards;
+}
+
+
+.profile-frame {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  background: linear-gradient(135deg, #a09896 0%, #222221 100%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; 
+  color: #ffffff; 
+  text-transform: uppercase; 
+  border: 2px solid #b0aca6; 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  position: relative; 
+  overflow: hidden; 
+  cursor: pointer; 
+  margin-left: 10px; 
+  transform: translateY(-100%); 
+  animation: slideInFromTop 0.5s ease-in-out forwards; 
+}
+
+
+.user-profile h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #bdbdbe;
+  animation: slideInFromTop 0.5s ease-in-out forwards;
+}
+
+.line {
+  height: 6px;
+  width: 100%;
+  box-shadow: 10px 20px 4px rgba(250, 250, 250, 0.2);
+  background-color: white;
+  margin-top: 15px;
+  display: inline-block;
+  filter: blur(10px);
+  border: none;
+}
+
+.profile-frame:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(135deg, #222221 0%, #a09896 100%); 
+}
+
+
+.profile-frame::before {
+  content: ""; 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0; 
+  background: rgba(255, 255, 255, 0.1); 
+  transition: opacity 0.3s ease-in-out; 
+  opacity: 0; 
+}
+
+
+.profile-frame:hover::before {
+  opacity: 1;
+}
+
+
+.profile-initial {
+  font-weight: bold;
+}
+
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

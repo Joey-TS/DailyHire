@@ -1,0 +1,29 @@
+@keyframes slideInLeft {
+    0% { transform: translateX(-100%); } 
+    100% { transform: translateX(0); } 
+  }
+
+
+.caption
+{
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    padding-left: 0.75rem;
+    padding-top: 150px;
+    animation: slideInLeft 1s forwards;
+  }
+.brand{
+    padding-left:  0.75rem; 
+    padding-top: 1px;
+    animation: slideInLeft 1.5s forwards;
+}
+
+.prebox{
+  padding-left: 0.75rem;
+
+  font-family: "Arsenal", sans-serif;
+  animation: slideInLeft 1.5s forwards;
+  padding-top: 50px;;
+}

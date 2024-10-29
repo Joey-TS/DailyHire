@@ -1,0 +1,29 @@
+.pac-container {
+    background-color: #fff !important;
+    border: 2px solid #ccc !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease-in-out;
+width: 350px !important; /* Set to desired width */
+
+  }
+  
+  .pac-item {
+    padding: 10px !important;
+    font-size: 1em !important;
+    color: #333 !important;
+    transition: background-color 0.2s ease;
+  }
+  
+  .pac-item:hover {
+    background-color: #e0e0e0 !important;
+  }
+  
+
+  
+  .pac-item-query {
+    font-weight: bold !important;
+  }
+  .pac-item .pac-icon {
+    opacity: 0.5; /* Reduce visibility but keep it visible */
+}

@@ -1,0 +1,22 @@
+@keyframes slideInLeft {
+    0% { transform: translateX(-100%); } 
+    100% { transform: translateX(0); } 
+  }
+@import url('https://fonts.googleapis. com/css?family=Outfit:wght@100;200; 300;400;500;600;700;800;900&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+body{
+  background:black;
+  padding-left: 4px;
+}
+h1,h2,a{
+  color: white;
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}

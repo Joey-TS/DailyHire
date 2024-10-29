@@ -1,0 +1,80 @@
+/* Close button */
+.close-qr-code-scanner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  .close-qr-code-scanner img {
+    width: 20px; /* Adjust the size of the close icon */
+    height: 20px;
+  }
+  
+  .close-qr-code-scanner:hover {
+    opacity: 0.8; /* Example: Lower opacity on hover */
+  }
+  .qr-scanner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #302f2f;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Attendance Popup Styling */
+.popupattendance {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.popup-contentattendance {
+  text-align: center;
+}
+
+.popup-contentattendance h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.popup-contentattendance p {
+  margin: 10px 0;
+}
+
+.popup-contentattendance strong {
+  font-weight: bold;
+}
+
+.ok-buttonattendance {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.ok-buttonattendance:hover {
+  background-color: #0056b3;
+}
+
+  
